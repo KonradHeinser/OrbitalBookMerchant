@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <TraderKindDef>
+        <!--SOM = Specialized Orbital Merchants, which I'm not expecting to use again, but wanted to be safe-->
+        <defName>SOM_Orbital_BookMerchant</defName>
+        <label>book merchant</label>
+        <orbital>true</orbital>
+        <stockGenerators>
+            <!-- Resources -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>8000~10000</countRange>
+            </li>
+
+            <!-- Techprints -->
+            <li Class="StockGenerator_Techprints">
+                <countChances>
+                    <li>
+                        <count>5</count>
+                        <chance>1</chance>
+                    </li>
+                </countChances>
+            </li>
+        
+            <!-- Books -->
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>TextBook</thingDef>
+                <countRange>5~10</countRange>
+            </li>
+        
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Schematic</thingDef>
+                <countRange>5~10</countRange>
+            </li>
+        
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Novel</thingDef>
+                <countRange>5~10</countRange>
+            </li>
+            
+            <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+                <thingDef>Tome</thingDef>
+                <countRange>5~10</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+</Defs>
