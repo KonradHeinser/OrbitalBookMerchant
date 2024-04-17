@@ -5,6 +5,7 @@
         <defName>SOM_Orbital_BookMerchant</defName>
         <label>book merchant</label>
         <orbital>true</orbital>
+        <commonality>0.25</commonality>
         <stockGenerators>
             <!-- Resources -->
             <li Class="StockGenerator_SingleDef">
@@ -43,5 +44,6 @@
                 <countRange>5~10</countRange>
             </li>
         </stockGenerators>
+        <hideThingsNotWillingToTrade>True</hideThingsNotWillingToTrade>
     </TraderKindDef>
 </Defs>
